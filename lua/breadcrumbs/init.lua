@@ -3,6 +3,7 @@ local M = {}
 local use_icons = true
 
 M.winbar_filetype_exclude = {
+  "netrw",
   "help",
   "startify",
   "dashboard",
