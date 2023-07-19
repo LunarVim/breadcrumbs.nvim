@@ -3,6 +3,7 @@ local M = {}
 local use_icons = true
 
 M.winbar_filetype_exclude = {
+  "NeogitCommitMessage",
   "netrw",
   "help",
   "startify",
@@ -10,6 +11,7 @@ M.winbar_filetype_exclude = {
   "lazy",
   "neo-tree",
   "neogitstatus",
+
   "NvimTree",
   "Trouble",
   "alpha",
