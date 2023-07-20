@@ -1,6 +1,6 @@
 # 🍞 breadcrumbs.nvim
 
-breadcrumbs is a plugin that works with nvim-navic to provide context about your code in the winbar.
+Breadcrumbs is a plugin that works with nvim-navic to provide context about your code in the winbar.
 
 ## Install
 
@@ -14,13 +14,29 @@ Add the following plugins with your favorite plugin manager
 ## Setup
 
 ```lua
-  require("nvim-navic").setup {
+require("nvim-navic").setup {
     lsp = {
-      auto_attach = true,
+        auto_attach = true,
     },
 }
 
 require("breadcrumbs").setup()
+```
+
+## Lazy.nvim
+```lua
+local M = {
+    "LunarVim/breadcrumbs.nvim",
+    dependencies = {
+        {"SmiteshP/nvim-navic"},
+    },
+}
+
+function M.config()
+    require("breadcrumbs").setup()
+end
+
+return M
 ```
 
 ## TODO
