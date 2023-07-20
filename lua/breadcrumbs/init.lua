@@ -11,12 +11,12 @@ M.winbar_filetype_exclude = {
   "lazy",
   "neo-tree",
   "neogitstatus",
-
   "NvimTree",
   "Trouble",
   "alpha",
   "lir",
   "Outline",
+  "git",
   "spectre_panel",
   "toggleterm",
   "DressingSelect",
