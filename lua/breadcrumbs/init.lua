@@ -97,7 +97,7 @@ local get_navic = function()
   end
 
   if not require("breadcrumbs.utils").isempty(navic_location) then
-    return "%#NavicSeparator#" .. "" .. "%* " .. navic_location
+    return "%#NavicSeparator#" .. "" .. "%* " .. navic_location
   else
     return ""
   end
@@ -124,7 +124,7 @@ M.get_winbar = function()
   end
 
   if not f.isempty(value) and f.get_buf_option "mod" then
-    local mod = "%#LspCodeLens#" .. " " .. "%*"
+    local mod = "%#LspCodeLens#" .. " " .. "%*"
     if navic_added then
       value = value .. " " .. mod
     else
