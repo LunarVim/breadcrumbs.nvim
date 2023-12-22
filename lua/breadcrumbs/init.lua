@@ -49,7 +49,7 @@ M.get_filename = function()
       end
     else
       file_icon = ""
-      hl_group = "Normal"
+      hl_group = "WinBar"
     end
 
     local buf_ft = vim.bo.filetype
@@ -74,10 +74,7 @@ M.get_filename = function()
       file_icon = ""
     end
 
-    local navic_text = vim.api.nvim_get_hl_by_name("Normal", true)
-    vim.api.nvim_set_hl(0, "Winbar", { fg = navic_text.foreground })
-
-    return " " .. "%#" .. hl_group .. "#" .. file_icon .. "%*" .. " " .. "%#Winbar#" .. filename .. "%*"
+    return " " .. "%#" .. hl_group .. "#" .. file_icon .. "%*" .. " " .. "%#WinBar#" .. filename .. "%*"
   end
 end
 
@@ -171,3 +168,4 @@ M.setup = function()
 end
 
 return M
+
