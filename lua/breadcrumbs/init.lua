@@ -74,7 +74,7 @@ M.get_filename = function()
       file_icon = ""
     end
 
-    return " " .. "%#" .. hl_group .. "#" .. file_icon .. "%*" .. " " .. "%#WinBar#" .. filename .. "%*"
+    return " " .. "%#" .. hl_group .. "#" .. file_icon .. " " .. "%*" .. " " .. "%#WinBar#" .. filename .. "%*"
   end
 end
 
