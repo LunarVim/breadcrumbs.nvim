@@ -56,6 +56,7 @@ M.get_filename = function()
 
     if buf_ft == "sidekick_terminal" then
       file_icon = "󰯉 "
+      filename = "Sidekick"
     end
 
     if buf_ft == "dapui_breakpoints" then
