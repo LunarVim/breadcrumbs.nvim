@@ -55,6 +55,10 @@ M.get_filename = function()
 
     local buf_ft = vim.bo.filetype
 
+    if buf_ft == "zellij" then
+      file_icon = " "
+    end
+
     if buf_ft == "dapui_breakpoints" then
       file_icon = ""
     end
